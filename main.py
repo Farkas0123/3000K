@@ -8,7 +8,7 @@ class Tanulo:
         self.vbhely = vbhely
         Tanulo.lista.append(self)
 
-with open("J.txt", "r", encoding="utf8") as f:
+with open("input.txt", "r", encoding="utf8") as f:
     for sor in f:
-        s = sor.strip().split(";")
+        s = sor.strip().split("\t")
         t = Tanulo(int(s[0]), s[1], int(s[2]), int(s[3]), s[4])
